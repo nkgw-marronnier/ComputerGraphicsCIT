@@ -18,7 +18,7 @@ var init = function () {
 
   // テクスチャー読み込み
   var textureLoader = new THREE.TextureLoader();
-  var texture = textureLoader.load("/webgl/texture/cit.png");
+  var texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/cit.png");
   var mat = new THREE.MeshPhongMaterial();
   mat.map = texture;
 
