@@ -56,7 +56,7 @@ var init = function () {
 
   // テクスチャー読み込み
   var textureLoader = new THREE.TextureLoader();
-  var texturePath = '/ComputerGraphicsCIT/webgl/texture/';
+  var texturepath = '/ComputerGraphicsCIT/webgl/texture/';
   var texture_earth = textureLoader.load(texturepath + "earth.jpg");
   var mat_earth = new THREE.MeshLambertMaterial();
   mat_earth.map = texture_earth;
