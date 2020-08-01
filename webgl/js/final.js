@@ -742,7 +742,7 @@ var init = function () {
   scene.add(tree4plane);
 
   //　炎の作成
-  VolumetricFire.texturePath = '/webgl/texture/';
+  VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
   var fireWidth = 10;
   var fireHeight = 25;
   var fireDepth = 10;
