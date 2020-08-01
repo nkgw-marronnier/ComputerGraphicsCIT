@@ -578,7 +578,7 @@
 
   };
 
-  VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
+  VolumetricFire.texturePath = 'ComputerGraphicsCIT/webgl/texture/';
 
   ///
 
