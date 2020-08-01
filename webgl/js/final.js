@@ -56,31 +56,31 @@ var init = function () {
 
   // テクスチャー読み込み
   var textureLoader = new THREE.TextureLoader();
-  var texture_earth = textureLoader.load("/webgl/texture/earth.jpg");
+  var texture_earth = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/earth.jpg");
   var mat_earth = new THREE.MeshLambertMaterial();
   mat_earth.map = texture_earth;
-  var texture = textureLoader.load("/webgl/texture/stone.jpg");
+  var texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/stone.jpg");
   var mat = new THREE.MeshPhongMaterial();
   mat.map = texture;
-  var kawa1_texture = textureLoader.load("/webgl/texture/kawa1.jpg");
+  var kawa1_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/kawa1.jpg");
   var kawa1_mat = new THREE.MeshLambertMaterial();
   kawa1_mat.map = kawa1_texture;
-  var kawa2_texture = textureLoader.load("/webgl/texture/kawa2.jpg");
+  var kawa2_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/kawa2.jpg");
   var kawa2_mat = new THREE.MeshLambertMaterial();
   kawa2_mat.map = kawa2_texture;
-  var minamo_texture = textureLoader.load("/webgl/texture/minamo.jpg");
+  var minamo_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/minamo.jpg");
   var minamo_mat = new THREE.MeshPhongMaterial();
   minamo_mat.map = minamo_texture;
-  var ki_texture = textureLoader.load("/webgl/texture/ki.jpg");
+  var ki_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/ki.jpg");
   var ki_mat = new THREE.MeshLambertMaterial();
   ki_mat.map = ki_texture;
-  var tree_texture = textureLoader.load("/webgl/texture/tree0.png");
-  var tree2_texture = textureLoader.load("/webgl/texture/tree1.png");
-  var tree3_texture = textureLoader.load("/webgl/texture/tree2.png");
-  var tree4_texture = textureLoader.load("/webgl/texture/tree3.png");
+  var tree_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/tree0.png");
+  var tree2_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/tree1.png");
+  var tree3_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/tree2.png");
+  var tree4_texture = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/tree3.png");
 
   //バンプマップ読み込み
-  var bump = textureLoader.load("/webgl/texture/stone-bump.jpg");
+  var bump = textureLoader.load("/ComputerGraphicsCIT/webgl/texture/stone-bump.jpg");
   mat.bumpMap = bump;
   mat.bumpscale = 0.2;
   minamo_mat.bumpMap = minamo_texture;
