@@ -4,8 +4,9 @@ var init = function () {
 
   //レンダラーを作成
   var renderer = new THREE.WebGLRenderer({
-  canvas: document.querySelector('#canvas'),
-  antialisa: true});
+    canvas: document.querySelector('#canvas'),
+    antialisa: true
+  });
   renderer.setSize(width, height);
 
   //シーンを作成
@@ -81,7 +82,9 @@ var init = function () {
   //ドーナツ2
   var torusGeometry2 = new THREE.TorusGeometry(0.5, 0.2, 6, 12);
   //半径、ドーナツの太さ、ドーナツのチューブ方向の分割数、水平方向の分割数
-  var torusMaterial2 = new THREE.MeshNormalMaterial({ wireframe: false });
+  var torusMaterial2 = new THREE.MeshNormalMaterial({
+    wireframe: false
+  });
   var torus2 = new THREE.Mesh(torusGeometry2, torusMaterial2);
   torus2.position.set(2, 0, -6.5);
   scene.add(torus2);
