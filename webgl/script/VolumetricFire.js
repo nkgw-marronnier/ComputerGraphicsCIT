@@ -174,8 +174,6 @@
 
   ].join('\n');
 
-  VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
-
   var initMaterial = (function () {
 
     var material;
@@ -580,7 +578,7 @@
 
   };
 
-  //VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
+  VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
 
   ///
 
