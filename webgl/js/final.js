@@ -747,7 +747,7 @@ var init = function () {
     transparent: true,
     side: THREE.DoubleSide,
   });
-  treef_mat.map = tree0_texture;
+  treef_mat.map = tree_texture;
   var tree4plane = new THREE.Mesh(treefgeometry, treef_mat);
   treefplane.position.set(40, -1.4, 40);
   scene.add(treefplane);
@@ -871,6 +871,7 @@ var init = function () {
     tree2plane.rotation.setFromRotationMatrix(camera.matrix);
     tree3plane.rotation.setFromRotationMatrix(camera.matrix);
     tree4plane.rotation.setFromRotationMatrix(camera.matrix);
+    treefplane.rotation.setFromRotationMatrix(camera.matrix);
 
     requestAnimationFrame(update);
 
