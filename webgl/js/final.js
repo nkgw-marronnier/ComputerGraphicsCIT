@@ -741,6 +741,17 @@ var init = function () {
   tree4plane.position.set(-1.5, -1.4, -35.5);
   scene.add(tree4plane);
 
+  // 天界樹炎1
+  var treefgeometry = new THREE.PlaneGeometry(20, 20);
+  var treef_mat = new THREE.MeshBasicMaterial({
+    transparent: true,
+    side: THREE.DoubleSide,
+  });
+  treef_mat.map = tree0_texture;
+  var tree4plane = new THREE.Mesh(treefgeometry, treef_mat);
+  treefplane.position.set(40, -1.4, 40);
+  scene.add(treefplane);
+
   //　炎の作成
   VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
   var fireWidth = 10;
