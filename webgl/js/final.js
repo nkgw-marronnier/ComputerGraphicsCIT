@@ -808,7 +808,7 @@ var init = function () {
     sliceSpacing,
     camera
   );
-  fire2.mesh.position.set(-40.5, 3, 39.5);
+  fire2.mesh.position.set(-40, 3, 40);
   scene.add(fire2.mesh);
   //　炎3の作成
   var fire3 = new VolumetricFire(
@@ -818,7 +818,7 @@ var init = function () {
     sliceSpacing,
     camera
   );
-  fire3.mesh.position.set(40.5, 3, -38);
+  fire3.mesh.position.set(40, 3, -40);
   scene.add(fire3.mesh);
   //　炎4の作成
   var fire4 = new VolumetricFire(
@@ -828,7 +828,7 @@ var init = function () {
     sliceSpacing,
     camera
   );
-  fire4.mesh.position.set(-39.5, 3, -40);
+  fire4.mesh.position.set(-40, 3, -40);
   scene.add(fire4.mesh);
 
   //†漆黒の霧†
