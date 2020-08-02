@@ -752,6 +752,39 @@ var init = function () {
   treefplane.position.set(40, -1.4, 40);
   scene.add(treefplane);
 
+  // 天界樹炎2
+  var treef2geometry = new THREE.PlaneGeometry(20, 20);
+  var treef2_mat = new THREE.MeshBasicMaterial({
+    transparent: true,
+    side: THREE.DoubleSide,
+  });
+  treef2_mat.map = tree2_texture;
+  var treef2plane = new THREE.Mesh(treef2geometry, treef_mat);
+  treef2plane.position.set(-40, -1.4, 40);
+  scene.add(treef2plane);
+
+  // 天界樹炎3
+  var treef3geometry = new THREE.PlaneGeometry(20, 20);
+  var treef3_mat = new THREE.MeshBasicMaterial({
+    transparent: true,
+    side: THREE.DoubleSide,
+  });
+  treef3_mat.map = tree3_texture;
+  var treef3plane = new THREE.Mesh(treef3geometry, treef3_mat);
+  treef3plane.position.set(40, -1.4, -40);
+  scene.add(treef3plane);
+
+  // 天界樹炎4
+  var treef4geometry = new THREE.PlaneGeometry(20, 20);
+  var treef4_mat = new THREE.MeshBasicMaterial({
+    transparent: true,
+    side: THREE.DoubleSide,
+  });
+  treef4_mat.map = tree4_texture;
+  var treefplane = new THREE.Mesh(treef4geometry, treef4_mat);
+  treef4plane.position.set(-40, -1.4, -40);
+  scene.add(treef4plane);
+
   //　炎の作成
   VolumetricFire.texturePath = '/ComputerGraphicsCIT/webgl/texture/';
   var fireWidth = 10;
@@ -872,6 +905,9 @@ var init = function () {
     tree3plane.rotation.setFromRotationMatrix(camera.matrix);
     tree4plane.rotation.setFromRotationMatrix(camera.matrix);
     treefplane.rotation.setFromRotationMatrix(camera.matrix);
+    treef2plane.rotation.setFromRotationMatrix(camera.matrix);
+    treef3plane.rotation.setFromRotationMatrix(camera.matrix);
+    treef4plane.rotation.setFromRotationMatrix(camera.matrix);
 
     requestAnimationFrame(update);
 
