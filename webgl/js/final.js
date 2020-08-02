@@ -781,7 +781,7 @@ var init = function () {
     side: THREE.DoubleSide,
   });
   treef4_mat.map = tree4_texture;
-  var treefplane = new THREE.Mesh(treef4geometry, treef4_mat);
+  var treef4plane = new THREE.Mesh(treef4geometry, treef4_mat);
   treef4plane.position.set(-40, -1.4, -40);
   scene.add(treef4plane);
 
