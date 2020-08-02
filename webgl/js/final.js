@@ -860,7 +860,7 @@ var init = function () {
     tree2plane.rotation.setFromRotationMatrix(camera.matrix);
     tree3plane.rotation.setFromRotationMatrix(camera.matrix);
     tree4plane.rotation.setFromRotationMatrix(camera.matrix);
-    
+
     requestAnimationFrame(update);
 
     renderer.render(scene, camera);
